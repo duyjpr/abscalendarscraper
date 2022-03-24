@@ -6,7 +6,7 @@ describe("plumber API", {
   })
 
   it("/releases returns releases", {
-    # TODO:
-    # expect_equal(api_v1_releases(), NULL)
+    expect_gt(nchar(api_v1_icalendar()), 1)
+    expect_match(api_v1_icalendar("Labour Force"), "Labour Force")
   })
 })

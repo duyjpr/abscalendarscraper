@@ -9,8 +9,13 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports: 
+    dplyr,
+    lubridate,
     plumber,
-    rvest
+    purrr,
+    rvest,
+    stringr,
+    tibble
 Suggests: 
     covr,
     testthat (>= 3.0.0)
