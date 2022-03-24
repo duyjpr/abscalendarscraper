@@ -60,7 +60,7 @@ read_abs_calendar <- function(url = CALENDAR_URL, verbose = T, read_html = xml2:
       , ref_period = e_ref_periods
       , current_url = e_current_urls
       , latest_url = map_present(
-        current_url
+        e_current_urls
         , \(.x) file.path(dirname(.x), "latest-release")
       )
       , calendar_url = next_page

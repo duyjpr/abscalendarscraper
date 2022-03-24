@@ -13,9 +13,11 @@ Imports:
     lubridate,
     plumber,
     purrr,
+    rlang,
     rvest,
     stringr,
-    tibble
+    tibble,
+    xml2
 Suggests: 
     covr,
     testthat (>= 3.0.0)

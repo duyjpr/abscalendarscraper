@@ -11,6 +11,7 @@ api_version <- function() {
 #* @get /v1/icalendar
 #* @param title:[string] Release titles to select. Case sensitive. Leave empty to return all releases.
 #* @serializer contentType list(type = "text/calendar")
+#' @importFrom rlang .data .env
 api_v1_icalendar <- function(title = "") {
   title <- stringr::str_trim(title)
   title <- title[nchar(title) > 0]
