@@ -1,0 +1,13 @@
+Package: abscalendarscraper
+Title: Scrape ABS release calendar
+Version: 0.0.0.9000
+Authors@R: 
+    person("Duy", "Nguyen", , "duy.nguyen@ecodev.vic.gov.au", role = c("aut", "cre"))
+Description: Scrape releases from ABS website and present them in other formats.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    plumber,
+    rvest
