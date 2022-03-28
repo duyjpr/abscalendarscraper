@@ -19,7 +19,7 @@ api_v1_icalendar <- function(title = "") {
   releases <- read_abs_calendar()
   if(length(title) > 0) {
     releases <- releases |>
-      dplyr::filter(stringr::str_detect(.data$title, stringr::fixed(.env$title)))
+      dplyr::filter(.data$title %in% .env$title)
   }
   to_ical(releases)
 }
