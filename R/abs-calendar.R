@@ -1,5 +1,5 @@
 
-CALENDAR_URL <- "https://www.abs.gov.au/release-calendar/future-releases"
+CALENDAR_URL <- "https://www.abs.gov.au/release-calendar/future-releases/all"
 
 # Applies mapper to some elements of `.x`. By default, it skips NA elements.
 # This is necessary because most functions treat NA_character_ as "NA".
