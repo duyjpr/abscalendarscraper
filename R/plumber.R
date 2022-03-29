@@ -1,10 +1,15 @@
 #* @apiTitle ABS calendar web scraper
 #* @apiDescription Scrapes releases from ABS website and presents them in other formats.
+#* @apiVersion 1
 
-#* Latest version. Useful for a diagnostics.
-#* @get /version
-api_version <- function() {
-  1
+#* Welcome page. Currently redirects to GitHub repo.
+#* @get /
+function(res) {
+  dest_url <- "https://github.com/duyjpr/abscalendarscraper"
+
+  res$status <- 302 # Moved
+  res$setHeader("Location", dest_url)
+  paste0("See: ", dest_url)
 }
 
 #* Get ABS releases in iCalendar format
