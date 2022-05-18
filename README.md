@@ -1,3 +1,7 @@
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/duyjpr/abscalendarscraper/workflows/R-CMD-check/badge.svg)](https://github.com/duyjpr/abscalendarscraper/actions)
+<!-- badges: end -->
+
 # ABS calendar scraper
 
 Scrapes the [ABS release calendar](https://www.abs.gov.au/release-calendar/future-releases) and presents entries in iCalendar format, ready to import into another calendar app.
