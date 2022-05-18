@@ -1,5 +1,6 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/duyjpr/abscalendarscraper/workflows/R-CMD-check/badge.svg)](https://github.com/duyjpr/abscalendarscraper/actions)
+[![Deploy to Heroku](https://github.com/duyjpr/abscalendarscraper/workflows/Deploy%20to%20Heroku/badge.svg)](https://github.com/duyjpr/abscalendarscraper/actions)
 <!-- badges: end -->
 
 # ABS calendar scraper
