@@ -1,8 +1,8 @@
 #* @apiTitle ABS calendar web scraper
-#* @apiDescription Scrapes releases from ABS website and presents them in other formats.
+#* @apiDescription Scrapes releases from ABS website and presents them in other formats. Source on [GitHub](https://github.com/duyjpr/abscalendarscraper).
 #* @apiVersion 1
 
-#* Welcome page. Currently redirects to GitHub repo.
+#* Browser home page. Currently redirects to GitHub repo, but may change in future.
 #* @get /
 function(res) {
   dest_url <- "https://github.com/duyjpr/abscalendarscraper"
@@ -12,16 +12,16 @@ function(res) {
   paste0("See: ", dest_url)
 }
 
-#* Check service status. Useful for diagnostics.
+#* Check service status. Useful for diagnostics. Response body will be "OK" if service is up and running.
 #* @get /status
 #* @serializer text
 function() {
   "OK"
 }
 
-#* Get ABS releases in iCalendar format
+#* Get ABS releases in iCalendar format.
 #* @get /v1/icalendar
-#* @param title:[string] Release titles to select. Case sensitive. Leave empty to return all releases.
+#* @param title:[string] (Optional) Release titles (names) to select. Leave empty to return all releases. Case sensitive, and must match the whole release title. E.g. "Labour Force, Australia".
 #* @serializer contentType list(type = "text/calendar")
 #' @importFrom rlang .data .env
 api_v1_icalendar <- function(title = "") {
