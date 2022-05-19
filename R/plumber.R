@@ -12,6 +12,13 @@ function(res) {
   paste0("See: ", dest_url)
 }
 
+#* Check service status. Useful for diagnostics.
+#* @get /status
+#* @serializer text
+function() {
+  "OK"
+}
+
 #* Get ABS releases in iCalendar format
 #* @get /v1/icalendar
 #* @param title:[string] Release titles to select. Case sensitive. Leave empty to return all releases.
